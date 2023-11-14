@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 import projects from '../utils/projects';
 
 const Projects = () => {
   return (
-    <div id="projects" >
+    <div id="projects">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
           <h2 className="max-w-lg mx-auto mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl md:mx-auto">
@@ -34,16 +35,18 @@ const Projects = () => {
             </span>
           </h2>
         </div>
-        <div className="grid gap-8  lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+        <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           {projects.map((project, index) => (
             <div
               key={index}
               className="border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md"
             >
-              <img
+              <Image
                 src={project.image}
+                alt={project.title}
+                width={800} // Adjust width as needed
+                height={500} // Adjust height as needed
                 className="object-cover w-full h-64"
-                alt=""
               />
               <div className="p-5 flex flex-col bg-white flex-1">
                 <h1 className="inline-block text-teal-600 mb-3 text-2xl font-bold leading-5">
