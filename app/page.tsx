@@ -3,11 +3,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
-import Skills from "./skills/index.js";
+import Skills from "./skills/index";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import Projects from "./projects/index.js";
-import Footer from "./footer/index.js";
-import Work from "./work/index.js";
+import Projects from "./projects/index";
+import Footer from "./footer/index";
+import Work from "./work/index";
 
 const Home = () => {
   return (
@@ -34,11 +34,11 @@ const Home = () => {
           <div className="flex flex-col p-10 md:flex-row">
             <div className="text-center p-10 py-10 md:w-1/2 md:ml-auto md:text-center">
               <h2 className="text-5xl py-2 text-teal-600 font-medium">
-                Blerton Krasniqi
+                Blerton Krasniqi&apos;s Portfolio
               </h2>
               <br />
               <h3 className="text-2xl font-medium py-2">Web Developer</h3>
-              <p className="text-medium py-5 leading-8 text-gray-800 ">
+              <p className="text-medium py-5 leading-8 text-gray-800">
                 Hi, I'm a passionate Web Developer with an eye for detail and a
                 love for all things digital. I have a strong understanding of
                 both front-end and back-end development, and I am excited to put
