@@ -6,6 +6,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundImage: {
@@ -15,10 +16,14 @@ const config: Config = {
       },
       fontFamily: {
         burtons: "burtons",
+      },
+      colors: {
+        "dark": "#232A3C",
+        "medium": "#293245"
       }
     },
   },
   plugins: [],
-  darkMode: 'class',
+
 }
 export default config

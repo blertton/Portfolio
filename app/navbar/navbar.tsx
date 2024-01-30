@@ -1,11 +1,13 @@
 import React from "react";
-import { MdOutlineDarkMode } from "react-icons/md";
+import Theme from "../Theme";
 
 const navbar = () => {
   return (
-    <nav className="py-10  mb-12 flex justify-between">
-      <h1 className="text-xl font-semibold font-burtons">Blerton Krasniqi</h1>
-      <ul className="flex items-center space-x-5">
+    <nav className="py-10 mb-12 flex justify-between dark:bg-medium">
+      <h1 className="text-xl font-semibold font-burtons dark:text-white">
+        Blerton Krasniqi
+      </h1>
+      <ul className="flex items-center space-x-5 dark:text-white">
         <li>
           <a href="#skills">Skills</a>
         </li>
@@ -25,6 +27,9 @@ const navbar = () => {
             Resume
           </a>
         </li>
+        <div>
+          <Theme />
+        </div>
       </ul>
     </nav>
   );

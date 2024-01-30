@@ -13,7 +13,7 @@ const Projects = () => {
               <svg
                 viewBox="0 0 52 24"
                 fill="currentColor"
-                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block dark:text-white"
               >
                 <defs>
                   <pattern
@@ -32,7 +32,7 @@ const Projects = () => {
                   height="24"
                 />
               </svg>
-              <span className="relative">My Projects</span>
+              <span className="relative dark:text-teal-300">My Projects</span>
             </span>
           </h2>
         </div>
@@ -49,16 +49,16 @@ const Projects = () => {
                 height={500} // Adjust height as needed
                 className="object-cover w-full h-64"
               />
-              <div className="p-5 flex flex-col bg-white flex-1">
-                <h1 className="inline-block text-teal-600 mb-3 text-2xl font-bold leading-5">
+              <div className="p-5 flex flex-col bg-white flex-1 dark:bg-gray-600">
+                <h1 className="inline-block text-teal-600 mb-3 text-2xl font-bold leading-5 dark:text-white">
                   {project.title}
                 </h1>
-                <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5">
+                <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5 dark:text-white">
                   {project.subTitle}
                 </h2>
-                <p className="mb-2 text-gray-700">{project.description}</p>
+                <p className="mb-2 text-gray-700 dark:text-white">{project.description}</p>
                 <div className="flex flex-wrap space-x-2 mt-5">
-                  <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5">
+                  <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5 dark:text-white">
                     Technologies:
                   </h2>
                   {project.technologies.map((tech, index) => (

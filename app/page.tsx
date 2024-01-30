@@ -10,7 +10,7 @@ import Socials from "./socials/socials";
 const Home = () => {
   return (
     <div>
-      <div className="bg-white md:px-32">
+      <div className="bg-white md:px-32 dark:bg-medium">
         <div className="min-h-screen">
           <Navbar />
           <Hero />
