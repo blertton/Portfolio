@@ -1,4 +1,4 @@
-import skills from '../utils/skills';
+import skills from "../data/skills";
 
 const Skills = () => {
   return (
@@ -38,22 +38,21 @@ const Skills = () => {
       <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
         {skills.map((skill, index) => (
           <div key={index} className="text-center">
-          <div className="flex items-center justify-center w-14 h-14 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-20 sm:h-20" >
-            {skill.icon}
-            
+            <div className="flex items-center justify-center w-14 h-14 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-20 sm:h-20">
+              {skill.icon}
+            </div>
+            <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
+              {skill.title}
+            </h6>
+            {skill.skills.map((item, index) => (
+              <p
+                key={index}
+                className="max-w-md mb-3 text-sm text-gray-900 mx-auto"
+              >
+                {item}
+              </p>
+            ))}
           </div>
-          <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
-            {skill.title}
-          </h6>
-          {skill.skills.map((item, index) => (
-            <p
-              key={index}
-              className="max-w-md mb-3 text-sm text-gray-900 mx-auto"
-            >
-              {item}
-            </p>
-          ))}
-        </div>
         ))}
       </div>
     </div>

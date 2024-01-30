@@ -1,6 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import projects from '../utils/projects';
+import React from "react";
+import Image from "next/image";
+import projects from "../data/projects";
+
 
 const Projects = () => {
   return (
@@ -69,7 +70,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex flex-wrap mt-auto space-x-2 mt-5">
+                <div className="flex flex-wrap mt-auto space-x-2">
                   <a
                     href={project.github}
                     target="_blank"

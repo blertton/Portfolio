@@ -1,5 +1,5 @@
-import React from 'react';
-import work from '../utils/work';
+import React from "react";
+import work from "../data/work";
 
 const Work = () => {
   return (
@@ -37,7 +37,7 @@ const Work = () => {
             </span>
           </h2>
         </div>
-        <div className="flex justify-center gap-8 row-gap-8 lg:grid-cols-3">
+        <div className="grid gap-8 lg:grid-cols-2 sm:max-w-sm sm:mx-auto lg:max-w-full">
           {work.map((workEntry, index) => (
             <div key={index} className="text-center">
               <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
