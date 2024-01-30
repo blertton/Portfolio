@@ -1,13 +1,13 @@
 import React from "react";
 import Theme from "../Theme";
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <nav className="py-10 mb-12 flex justify-between dark:bg-medium">
-      <h1 className="text-xl font-semibold font-burtons dark:text-white">
+    <nav className="py-5 md:py-10 mb-12 flex flex-col md:flex-row justify-between w-auto dark:bg-medium">
+      <h1 className="text-xl font-semibold font-burtons dark:text-white mb-4 md:mb-0">
         Blerton Krasniqi
       </h1>
-      <ul className="flex items-center space-x-5 dark:text-white">
+      <ul className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-5 dark:text-white">
         <li>
           <a href="#skills">Skills</a>
         </li>
@@ -35,4 +35,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
