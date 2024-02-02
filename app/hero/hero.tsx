@@ -11,7 +11,7 @@ const hero = () => {
         </h2>
         <br />
         <h3 className="text-2xl font-medium py-2">Web Developer</h3>
-        <p className="text-medium py-5 leading-8 text-gray-800  dark:text-white">
+        <p className="text-medium py-5 leading-8 dark:text-white">
           Hi, I&apos;m a passionate Web Developer with an eye for detail and a
           love for all things digital. I have a strong understanding of both
           front-end and back-end development, and I am excited to put my skills
