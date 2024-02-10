@@ -5,3 +5,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+:root {
+
+  --text: rgb(235, 236, 243);
+  --brand: #459e92;
+
+}
+
