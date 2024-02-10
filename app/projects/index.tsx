@@ -41,11 +41,11 @@ const Projects = () => {
           </h2>
         </div>
         <Reveal width="100%">
-          <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+          <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full ">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md"
+                className="border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md "
               >
                 <Image
                   src={project.image}

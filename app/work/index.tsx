@@ -47,8 +47,8 @@ const Work = () => {
         <Reveal width="100%">
           <div className="grid gap-8 lg:grid-cols-2 sm:max-w-sm sm:mx-auto lg:max-w-full">
             {work.map((workEntry, index) => (
-              <div key={index} className="text-center">
-                <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4 dark:text-white">
+              <div key={index} className="text-center ">
+                <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4 dark:text-white mt-10">
                   {workEntry.title}
                 </h6>
                 {workEntry.skills.map((skill, skillIndex) => (

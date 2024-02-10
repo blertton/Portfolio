@@ -1,9 +1,20 @@
+"use client";
 import skills from "../data/skills";
 import { Reveal } from "@/app/Reveal/Reveal";
+import Image from "next/image";
+import wave from "../../public/wave.png";
 
 const Skills = () => {
   return (
-    <div id="skills">
+    <div id="skills" className="relative">
+      <div className="-z-20 h-full w-full overflow-hidden">
+        <Image
+          src={wave}
+          fill
+          className="inset-0 object-cover w-full overflow-visible "
+          alt="wave"
+        />
+      </div>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto dark:text-white">
@@ -39,10 +50,13 @@ const Skills = () => {
           </h2>
         </div>
         <Reveal width="100%">
-          <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
+          <div className="grid gap-6 row-gap-8 lg:grid-cols-3">
             {skills.map((skill, index) => (
-              <div key={index} className="text-center dark:text-white">
-                <div className="flex items-center justify-center w-14 h-14 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-20 sm:h-20">
+              <div
+                key={index}
+                className="text-center h-[28rem] dark:text-white bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 rounded-lg"
+              >
+                <div className="flex items-center justify-center w-14 h-14 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-20 sm:h-20 mt-10">
                   {skill.icon}
                 </div>
                 <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4 ">

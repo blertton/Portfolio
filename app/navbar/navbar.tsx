@@ -14,12 +14,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-5 md:py-10 mb-12 flex flex-col md:flex-row justify-between w-auto dark:bg-medium ${
+      className={` py-5 md:py-10 mb-12 md:px-32 flex flex-col md:flex-row justify-between w-auto dark:bg-medium ${
         isMobile && menuOpen ? "md:hidden" : ""
       }`}
     >
       <h1 className="text-xl font-semibold font-burtons dark:text-white mb-4 md:mb-0 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-5">
-        Blerton Krasniqi
+        <a href="#hero"> Blerton Krasniqi</a>
       </h1>
       {isMobile && (
         <button className="md:hidden mb-2" onClick={handleMenuToggle}>

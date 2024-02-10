@@ -17,9 +17,18 @@ const config: Config = {
       fontFamily: {
         burtons: "burtons",
       },
+      height: {
+        '128': '100rem',
+      },
+      width: {
+        '128': '100rem',
+      },
       colors: {
-        "dark": "#232A3C",
-        "medium": "#293245"
+        "dark": "#0b0d12",
+        "medium": "#13161c"
+      }, 
+      spacing: {
+        '5px': '5px',
       }
     },
   },

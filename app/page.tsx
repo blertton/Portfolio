@@ -1,4 +1,3 @@
-"use Client";
 import Skills from "./skills/index";
 import Projects from "./projects/index";
 import Footer from "./footer/index";
@@ -10,7 +9,7 @@ import Socials from "./socials/socials";
 const Home = () => {
   return (
     <div>
-      <div className="bg-white md:px-32 dark:bg-medium">
+      <div className="bg-white dark:bg-medium">
         <div className="min-h-screen">
           <Navbar />
           <Hero />
