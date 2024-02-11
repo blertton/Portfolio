@@ -31,13 +31,10 @@ const hero = () => {
           </p>
         </Reveal>
       </div>{" "}
-      <div className="relative mx-auto bg-gradient-to-b from-teal-400 rounded-full w-full md:w-80 h-80 mt-20 overflow-hidden">
-        {" "}
-        <Image
-          src={deved}
-          alt="Developer Image"
-          layout="fill"
-          objectFit="cover"
+      <div className="items-center mx-auto bg-none relative w-full md:w-96 h-[30rem]  overflow-hidden">
+        <Spline
+          className="w-96 h-80 bg-none"
+          scene="https://prod.spline.design/uO4TlUd5uLs-jvPa/scene.splinecode"
         />
       </div>
     </div>
