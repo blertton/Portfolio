@@ -32,7 +32,7 @@ const hero = () => {
         </Reveal>
       </div>{" "}
       <div className="relative bg-gradient-to-b from-gray-900 mx-auto rounded-full w-full md:w-80 h-80 mt-14 overflow-hidden">
-        <Image src={myGif} alt="my gif" className=" bg-inherit h-80 " />
+        <Image src={myGif} alt="my gif" className=" bg-none h-80 " />
       </div>
     </div>
   );

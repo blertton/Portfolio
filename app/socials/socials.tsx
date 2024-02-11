@@ -17,7 +17,7 @@ const socials = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedInIcon className="text-6xl" />
+            <LinkedInIcon className="text-6xl h-16 w-16" />
           </a>
         </Reveal>
         <Reveal width="100%">
@@ -26,7 +26,7 @@ const socials = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GitHubIcon className="text-6xl" />
+            <GitHubIcon className="text-6xl h-16 w-16" />
           </a>
         </Reveal>
         <Reveal width="100%">
@@ -35,7 +35,7 @@ const socials = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MailOutlineIcon className="text-6xl" />
+            <MailOutlineIcon className="text-6xl h-16 w-16" />
           </a>
         </Reveal>
       </div>
