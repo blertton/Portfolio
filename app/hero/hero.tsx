@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import deved from "../../public/dev-ed-wave.png";
 import { Reveal } from "@/app/Reveal/Reveal";
-import Spline from "@splinetool/react-spline";
+import myGif from "../../public/7kmF.gif";
 
 const hero = () => {
   return (
@@ -31,11 +31,8 @@ const hero = () => {
           </p>
         </Reveal>
       </div>{" "}
-      <div className="items-center mx-auto bg-none relative w-full md:w-96 h-[30rem]  overflow-hidden">
-        <Spline
-          className="w-96 h-80 bg-none"
-          scene="https://prod.spline.design/uO4TlUd5uLs-jvPa/scene.splinecode"
-        />
+      <div className="relative bg-gradient-to-b from-gray-900 mx-auto rounded-full w-full md:w-80 h-80 mt-14 overflow-hidden">
+        <Image src={myGif} alt="my gif" className=" bg-inherit h-80 " />
       </div>
     </div>
   );
