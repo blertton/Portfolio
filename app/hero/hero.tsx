@@ -4,7 +4,6 @@ import Image from "next/image";
 import deved from "../../public/dev-ed-wave.png";
 import { Reveal } from "@/app/Reveal/Reveal";
 import myGif from "../../public/7kmF.gif";
-import Spline from "@splinetool/react-spline";
 
 const hero = () => {
   return (
@@ -32,7 +31,7 @@ const hero = () => {
           </p>
         </Reveal>
       </div>{" "}
-      <div className="relative bg-gradient-to-b from-gray-900 mx-auto rounded-full w-full md:w-80 h-80 mt-14 overflow-hidden">
+      <div className="relative bg-gradient-to-l from-black mx-auto rounded-full w-full md:w-80 h-80 mt-14 overflow-hidden">
         <Image src={myGif} alt="my gif" className=" bg-none h-80 " />
       </div>
     </div>

@@ -55,17 +55,17 @@ const Projects = () => {
                   className="object-cover w-full h-64"
                 />
                 <div className="p-5 flex flex-col bg-white flex-1 dark:bg-gray-600">
-                  <h1 className="inline-block text-teal-600 mb-3 text-2xl font-bold leading-5 dark:text-white">
+                  <h1 className="inline-block text-teal-600 mb-3 text-2xl font-bold leading-5 dark:text-gray-900">
                     {project.title}
                   </h1>
-                  <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5 dark:text-white">
+                  <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5 dark:text-gray-800">
                     {project.subTitle}
                   </h2>
                   <p className="mb-2 text-gray-700 dark:text-white">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap space-x-2 mt-5">
-                    <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5 dark:text-white">
+                    <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5 dark:text-gray-900">
                       Technologies:
                     </h2>
                     {project.technologies.map((tech, index) => (
