@@ -45,7 +45,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md "
+                className="border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded-2xl shadow-md"
               >
                 <Image
                   src={project.image}
@@ -54,7 +54,7 @@ const Projects = () => {
                   height={500} // Adjust height as needed
                   className="object-cover w-full h-64"
                 />
-                <div className="p-5 flex flex-col bg-white flex-1 dark:bg-gray-600">
+                <div className="p-5 flex flex-col bg-white flex-1 dark:bg-[#848584]">
                   <h1 className="inline-block text-teal-600 mb-3 text-2xl font-bold leading-5 dark:text-gray-900">
                     {project.title}
                   </h1>
@@ -83,7 +83,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noreferrer"
                       aria-label=""
-                      className="inline-flex bg-gradient-to-b from-teal-400 rounded-full px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-black"
+                      className="inline-flex bg-teal-600 rounded-full px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white "
                     >
                       Source Code
                     </a>
